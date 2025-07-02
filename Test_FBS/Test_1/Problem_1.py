@@ -1,14 +1,11 @@
 length = float(input("Enter the length of rectangle: "))
 breadth = float(input("Enter the breadth of rectangle: "))
-radius = float(input("Enter the radius of semicircle: "))
-#calculate area
-rectangle_area = length * breadth
-semicircle_area = (3.14 * radius**2)/2
-total_area = rectangle_area + semicircle_area
-#Calculate perimeter
-rectangle_perimeter = 2 * length* breadth
-semicircule_perimeter = (3.14 * radius * radius) / 2
-total_perimeter = rectangle_area + semicircle_area
+radius = float(input("Enter the radius : "))
 
-print("total Area :",total_area)
-print("Total Perimeter :",total_perimeter)
+#calculate area of rectangle = 2(length*breadth)
+area = (2 * length) + breadth
+#circumference of circle = 2 * 3.14 * radius
+circumference = 3.14 * radius
+
+print("The area of rectangle is : ",area)
+print("The circumference os circle is : ",circumference)
