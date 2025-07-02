@@ -1,9 +1,8 @@
-Length = int(input("Enter Length of Wall: "))
-Breadth = int(input("Enter Breadth of Wall: "))
-Cost = int(input("Enter Cost Of Colour per Unit: "))
+side = int(input("Enter side of Wall : "))
+cost_int = int(input("Enter cost of interior wall : "))
+cost_ext = int(input("Enter Cost Of exterior wall : "))
 
-Area = Length * Breadth
-Allwalls = Area * 4
-CostOfPaint = Allwalls * Cost
+total_area = 7 * side**2
+total_cost = (total_area * cost_int) + (total_area * cost_ext)
 
-print("Total Cost of Painting 4 Walls is: ₹", CostOfPaint)
+print("Cost of Painting 2 rooms is : ₹",total_cost)
